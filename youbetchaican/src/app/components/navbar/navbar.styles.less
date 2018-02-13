@@ -1,0 +1,38 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.navbar-light {
+  background-color: @navbar-light-bg !important;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  .box-shadow();
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: .9rem;
+      }
+      &.dropdown {
+        .dropdown-toggle {
+          &:after {
+            margin-left: .5em;
+            vertical-align: .15em;
+          }
+        }
+        .dropdown-menu {
+          border: none;
+          border-radius: 0;
+          top: 48px;
+          border-top: 2px solid #000;
+          padding: 0;
+          .box-shadow();
+          .nav-link {
+            padding: 16px;
+            &:hover {
+              background-color: #eee;
+            }
+          }
+        }
+      }
+    }
+  }
+}
