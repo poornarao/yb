@@ -9,7 +9,8 @@ import Product from "../../components/product/product.jsx";
 import Testimonial from "./testimonial.jsx";
 import Navbar from "../../components/navbar/navbar.jsx";
 import Footer from "../../components/footer/footer.jsx";
-import GoogleMaps from "../../components/google-maps/google-maps.jsx";
+
+const authorImg = require('../../../assets/author.jpg');
 
 class Index extends Component {
 
@@ -29,7 +30,7 @@ class Index extends Component {
                                 <div className="container">
                                     <div className={'row'}>
                                         <div className={'col-4'}>
-                                            <img src={'http://via.placeholder.com/350x380'}/>
+                                            <img src={authorImg} width={350} height={380}/>
                                         </div>
                                         <div className={'col-8'}>
                                             <h1 className="display-4">Welcome to Seeing the Light</h1>
@@ -77,7 +78,7 @@ class Index extends Component {
                         </div>
                     </div>
                 </div>
-                <div className={'bg-white pt-2 pb-5'}>
+                <div className={'bg-light pt-2 pb-5'}>
                     <div className={'container py-4'}>
                         <div className={'row mb-4'}>
                             <div className={'col'}>
@@ -93,7 +94,6 @@ class Index extends Component {
                         </div>
                     </div>
                 </div>
-                <GoogleMaps/>
                 <Footer/>
             </div>
         );
