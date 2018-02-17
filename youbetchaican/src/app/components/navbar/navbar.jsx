@@ -1,4 +1,3 @@
-
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
 
@@ -40,7 +39,7 @@ class Navbar extends Component {
                                     Our Products
                                 </Link>
                             </li>
-                            <li className="nav-item dropdown">
+                            <li className={"nav-item dropdown " + (activePage === 'services' ? 'active' : '')}>
                                 <Link className="nav-link dropdown-toggle" to="about" id="servicesMenu"
                                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Services
@@ -52,10 +51,10 @@ class Navbar extends Component {
                                     <Link className="nav-link" to="counselings">
                                         Counselings
                                     </Link>
-                                    <Link className="nav-link" to="brain-integration">
+                                    <Link className="nav-link" to="brain-integrations">
                                         Brain Integration
                                     </Link>
-                                    <Link className="nav-link" to="clients-handouts">
+                                    <Link className="nav-link" to="client-handouts">
                                         Clients Handouts
                                     </Link>
                                 </div>
