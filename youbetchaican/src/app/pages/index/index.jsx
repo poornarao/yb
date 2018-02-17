@@ -1,6 +1,3 @@
-/**
- * Created by sasidhar on 09/11/17.
- */
 
 import './index.styles.less';
 
